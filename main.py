@@ -35,7 +35,7 @@ def checkParkingSpace(imgPro):
 
 
 cap = cv2.VideoCapture('carPark.mp4')
-cap.set(cv2.CAP_PROP_POS_FRAMES, 5250)
+cap.set(cv2.CAP_PROP_POS_FRAMES, 0)
 
 try:
     with open('CarParkPos','rb') as f:
