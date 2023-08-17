@@ -2,8 +2,9 @@
 
 An app created using Python and OpenCV during the FGF brands' first hackathon.
 
-The app works by first providing an image of the desired parking lot and then plotting squares to best match the parking spots sizing.
+The app works by first providing an image of the desired parking lot and then plotting rectangles to best match the parking spot sizing.
 
-Behind the scenes video will be converted to greyscale and and squares that have been plotted will have a threshold value that if surpassed signal an occupied or open parking space. This is done by essentially treating the image as binary with white pixels = 1's while dark pixels = 0's.
+Video will be converted to greyscale and rectangles that have been plotted will have a designated threshold value that if surpassed signal an occupied while values below the threshold indicate an open parking space. 
+This is done by treating the pixels within a plotted rectangle as binary with white pixels = 1's while dark pixels = 0's.
 
-There is certainly room for improvement as the plotting of squares is essentially fixed and rigid which means depending on the angle of the camera its coverage it may become inaccurate.
+There is certainly room for improvement as the plotting of rectangles is currently fixed and rigid. Depending on the angle of the camera's coverage it may be difficult to accurately capture certain parking spaces.
